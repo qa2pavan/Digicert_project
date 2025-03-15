@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Certificate Validation Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="com.digicert.qa.testcert.CertificateNegativeTests">
+        <methods>
+          <include name="testMalformedCertificate"/>
+          <include name="setup"/>
+          <include name="testCertificateExpiry_WithSpecificDate"/>
+          <include name="testWeakCertificateKeySize"/>
+        </methods>
+      </class> <!-- com.digicert.qa.testcert.CertificateNegativeTests -->
+      <class name="com.digicert.qa.testcert.CertificateStructureValidationTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.digicert.qa.testcert.CertificateStructureValidationTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Certificate Validation Suite] -->

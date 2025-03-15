@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Certificate Validation Suite</th></tr><tr><td><a href="#t0">Test1</a></td><td class="num">10</td><td class="num">0</td><td class="num attn">3</td><td class="num">132</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Certificate Validation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.digicert.qa.testcert.CertificateNegativeTests</td><td><a href="#m0">testCertificateExpiry_WithSpecificDate</a></td><td rowspan="1">1742035169691</td><td rowspan="1">5</td></tr><tr class="failedeven"><td><a href="#m1">testMalformedCertificate</a></td><td rowspan="1">1742035169697</td><td rowspan="1">4</td></tr><tr class="failedeven"><td><a href="#m2">testWeakCertificateKeySize</a></td><td rowspan="1">1742035169702</td><td rowspan="1">3</td></tr><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.digicert.qa.testcert.CertificateDataDrivenTest</td><td><a href="#m3">testCertificateExpiration</a></td><td rowspan="3">1742035169678</td><td rowspan="3">2</td></tr><tr class="passedeven"><td><a href="#m4">testCertificateExpiration</a></td></tr><tr class="passedeven"><td><a href="#m5">testCertificateExpiration</a></td></tr><tr class="passedodd"><td rowspan="1">com.digicert.qa.testcert.CertificateNegativeTests</td><td><a href="#m6">testCertificateExpiry</a></td><td rowspan="1">1742035169686</td><td rowspan="1">4</td></tr><tr class="passedeven"><td rowspan="6">com.digicert.qa.testcert.CertificateStructureValidationTest</td><td><a href="#m7">testValidateCertExpirydate</a></td><td rowspan="1">1742035169596</td><td rowspan="1">28</td></tr><tr class="passedeven"><td><a href="#m8">testValidateCertSignatureAlgorith</a></td><td rowspan="1">1742035169625</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m9">testValidateCertVersion</a></td><td rowspan="1">1742035169631</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m10">testValidateCertificate</a></td><td rowspan="1">1742035169637</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m11">testValidateCommanName</a></td><td rowspan="1">1742035169642</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m12">testValidateIssuer</a></td><td rowspan="1">1742035169647</td><td rowspan="1">6</td></tr></tbody></table><h2>Test1</h2><h3 id="m0">com.digicert.qa.testcert.CertificateNegativeTests#testCertificateExpiry_WithSpecificDate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The certificate is not valid by this date- Thu Mar 12 10:31:30 IST 2026 expected [true] but found [false]
+	at com.digicert.qa.testcert.CertificateNegativeTests.testCertificateExpiry_WithSpecificDate(CertificateNegativeTests.java:49)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.digicert.qa.testcert.CertificateNegativeTests#testMalformedCertificate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: ==The certificate at &apos;&quot; + malformedcertificatePath + &quot;&apos; is malformed certificate== expected [true] but found [false]
+	at com.digicert.qa.testcert.CertificateNegativeTests.testMalformedCertificate(CertificateNegativeTests.java:57)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.digicert.qa.testcert.CertificateNegativeTests#testWeakCertificateKeySize</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: ==The certificate at &apos;&quot; + malformedcertificatePath + &quot;&apos; is malformed certificate== expected [true] but found [false]
+	at com.digicert.qa.testcert.CertificateNegativeTests.testWeakCertificateKeySize(CertificateNegativeTests.java:73)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.digicert.qa.testcert.CertificateDataDrivenTest#testCertificateExpiration</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[
+[
+  Version: V3
+  Subject: CN=mydomain.com, OU=QA, O=MyCompany, L=San Francisco, ST=California, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 3072 bits
+  params: null
+  modulus: 4001708720472887817325220013612859595145999559199460723257809592379076702822971064618108424488422290130367293733711012786819283940835724921402218846515861779836177947008771488887360616189788207011076135275266789184941230515134876128622064435863169352294256312233430491373700390865760298255026506548459466586117369716846146398591596466272064105374814138299414475140979778625946394759330877240602787106598107793313272834573685536222115734127370884240439956652231378868088282826777883241271700107680458395722931342502615622448520511742042029482868240580463832263177859960208151881402706836722172838592819584955944385780614406887347837919429458130527082221609936316523459982132285456051797956207597080317675842344388382319795094699239853016301416401419994739447548327487563276021119933668953532802637121389215542219942813878211819963474248396988975209746398309564217656929111343156631076985297307431952385194574695065143365190731
+  public exponent: 65537
+  Validity: [From: Sat Mar 15 12:04:20 IST 2025,
+               To: Sun Mar 15 12:04:20 IST 2026]
+  Issuer: CN=mydomain.com, OU=QA, O=MyCompany, L=San Francisco, ST=California, C=US
+  SerialNumber: [    525fd3b1 94b79b6a 33817fa1 88b5511b 92c746a7]
+
+Certificate Extensions: 3
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: CD 1C 31 DA B3 89 D6 1F   71 FD 3E 12 82 AF 1E 21  ..1.....q.&gt;....!
+0010: 3D 35 81 A5                                        =5..
+]
+]
+
+[2]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[3]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: CD 1C 31 DA B3 89 D6 1F   71 FD 3E 12 82 AF 1E 21  ..1.....q.&gt;....!
+0010: 3D 35 81 A5                                        =5..
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 91 CC 72 0C CD 43 2A B5   44 B2 B9 1C 03 F9 08 69  ..r..C*.D......i
+0010: 9E 74 52 92 53 E8 8A A8   FB 4B 4D 0E D2 AB 94 E5  .tR.S....KM.....
+0020: A3 D3 8F 39 F6 D7 4A A2   92 C3 BE 7F 0B 80 36 48  ...9..J.......6H
+0030: 1B D9 89 D8 85 34 CA 42   D4 E0 05 3D 0A 1F 18 58  .....4.B...=...X
+0040: E8 46 20 46 02 4D 46 B7   40 CE 4D 41 E6 19 2B 15  .F F.MF.@.MA..+.
+0050: 00 A1 79 28 1D 4B C1 BA   CD 01 9E 43 B8 EC 6F 28  ..y(.K.....C..o(
+0060: E5 6B F2 51 C5 5D EF 0C   98 FF AB FD BC 09 35 C8  .k.Q.]........5.
+0070: F8 5F EB 57 F9 07 6F E5   32 11 96 7D 28 24 C6 9F  ._.W..o.2...($..
+0080: 39 CA 36 C4 F1 80 AC 0A   6E 23 2A A1 9D 52 CD 87  9.6.....n#*..R..
+0090: C1 16 E5 43 9D 5D B8 CC   CB D1 14 E9 DB C7 6C 2F  ...C.]........l/
+00A0: E9 96 8E 10 DB 9F 1D C9   50 48 54 18 29 DA CB 33  ........PHT.)..3
+00B0: D5 42 F5 4A 20 D7 63 E3   00 8B 98 F9 18 89 04 58  .B.J .c........X
+00C0: A1 4B 59 13 10 2D 7C A0   13 AB 95 2E 4C 74 95 DB  .KY..-......Lt..
+00D0: 9A A2 48 DE E1 FE 40 89   1A E9 2F 8D 7C F3 5D 00  ..H...@.../...].
+00E0: C0 BD AB 2E 7F 52 3D 66   AA D0 3C 28 DD 30 2A B5  .....R=f..&lt;(.0*.
+00F0: C4 58 C1 FA 1E 0E 74 94   63 6F D5 BD F7 ED 46 66  .X....t.co....Ff
+0100: 6F D0 4C AB A3 74 B4 C2   4B 2A FE CF D4 26 66 8B  o.L..t..K*...&amp;f.
+0110: 3C FD 0D 95 60 D7 E9 56   C5 59 86 60 2B E0 DB CF  &lt;...`..V.Y.`+...
+0120: 2E 81 F2 C9 8E 18 2A 77   7B 25 F0 0E B9 F5 9D C3  ......*w.%......
+0130: 8A 21 A3 B9 55 74 29 03   BA 6E 18 54 4F DE 1E 1D  .!..Ut)..n.TO...
+0140: DF 95 73 67 89 23 EB 30   C4 79 1F B2 00 4D F4 BB  ..sg.#.0.y...M..
+0150: C5 DC E4 F8 C4 41 1A FE   F7 D8 51 E4 04 F0 A6 AF  .....A....Q.....
+0160: 6F 77 AA FE 94 8A 90 2E   C9 2A BF 1D 3F 74 1D 25  ow.......*..?t.%
+0170: 46 EE 85 5A 91 3B D6 7C   F2 04 00 07 0E 9A C2 11  F..Z.;..........
+
+]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.digicert.qa.testcert.CertificateDataDrivenTest#testCertificateExpiration</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[
+[
+  Version: V3
+  Subject: CN=Testdomain.com, OU=QA, O=MyCompany, L=San Francisco, ST=California, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 24838784502851731007031553096144592132728936128679712540804526308710245436102416183154542293744651100189394164226232585063018221487977997301472726573540528004954980913501521893035004264316843683355174039904489378393248187328736755245125037142804605139350223101723930379089054437901411540771662052075514914413719909788845676752648731354001483923555375794827106249061592784457917767501709524996296746844916321359594076861182323648903699965734790342080907083593960130686939456375950870953378731406945585884235225090955725481223328706882370606230364895625762166453768164760724656080866478469503899219915315387929178688319
+  public exponent: 65537
+  Validity: [From: Sat Mar 15 12:09:09 IST 2025,
+               To: Sun Mar 15 12:09:09 IST 2026]
+  Issuer: CN=Testdomain.com, OU=QA, O=MyCompany, L=San Francisco, ST=California, C=US
+  SerialNumber: [    118a47e5 df572c06 74f4cbff b3cdeb67 5524e253]
+
+Certificate Extensions: 3
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: F6 24 6C 92 B3 8F 46 2C   69 7D 42 1F 99 FB D6 4D  .$l...F,i.B....M
+0010: 9D F5 54 8C                                        ..T.
+]
+]
+
+[2]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[3]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: F6 24 6C 92 B3 8F 46 2C   69 7D 42 1F 99 FB D6 4D  .$l...F,i.B....M
+0010: 9D F5 54 8C                                        ..T.
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 13 55 1C 7F 69 13 BC B7   A9 BC 68 C4 CD 2D 7A D3  .U..i.....h..-z.
+0010: B8 11 1E 94 95 10 66 FE   7F 68 4D 37 01 46 42 ED  ......f..hM7.FB.
+0020: 8A 7D 1F 5B E9 D6 FA 0B   3B 7D AD 63 86 C2 FB DA  ...[....;..c....
+0030: 0D A7 26 5A 1C 5D A1 CD   85 27 F7 4D 79 D5 D5 DA  ..&amp;Z.]...&apos;.My...
+0040: B9 44 66 4B 7D EB 23 8F   45 CF 16 32 FB 2B 0F 2E  .DfK..#.E..2.+..
+0050: F6 08 81 B1 78 5F EF BB   4C B7 0B FB 47 71 1A 87  ....x_..L...Gq..
+0060: C7 C7 0D 24 99 15 43 FA   3E 6B 35 2B 9B 38 42 43  ...$..C.&gt;k5+.8BC
+0070: 26 1A 27 99 0E 86 25 DB   1C E3 AC B0 BF 59 06 FB  &amp;.&apos;...%......Y..
+0080: F3 AD 76 E4 05 7A A8 73   BF 96 6F 5B 26 12 DC E5  ..v..z.s..o[&amp;...
+0090: DE 05 AB 95 B2 CC A4 51   FD 54 32 C2 AE A8 59 27  .......Q.T2...Y&apos;
+00A0: 89 34 8E CC D1 B2 84 33   2E 45 0E 64 11 30 31 F5  .4.....3.E.d.01.
+00B0: F3 CF 48 B7 06 16 C1 F3   80 AC EE 68 FB 34 BA 16  ..H........h.4..
+00C0: 13 60 6C 0D 0D 60 E1 8E   47 56 BD 20 F3 9F 42 86  .`l..`..GV. ..B.
+00D0: 1E 95 24 E5 78 7D 2F 71   A0 53 58 A8 55 62 D0 4C  ..$.x./q.SX.Ub.L
+00E0: 88 24 F1 CB 53 7C 29 D8   95 BE 8D D8 72 D7 3A 3A  .$..S.).....r.::
+00F0: B3 AA 87 76 8D 21 B0 F7   99 A3 F7 CC 04 00 74 07  ...v.!........t.
+
+]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.digicert.qa.testcert.CertificateDataDrivenTest#testCertificateExpiration</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[
+[
+  Version: V3
+  Subject: CN=mydomain.com, OU=QA, O=MyCompany, L=San Francisco, ST=California, C=US
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 25034826530143360806977114645989244906027893509566052644199568842576604722470646864285126225832051391717244958616775853610782244002493764490634922881343662759504985354779197137940139373701059664330772409483778299723576837445554514406495644103932221789615445323437084299037782494780903996051624058650505640650230139535815541272078771458051222523723954167744968769148105173931620837200365080196550424961187757466256391540093477724134857378857247041966600797158992459334518474405152462501427867381408999356479810888959929675705702514553775428723851536200054423514344749457270568936311378226101918704532921159586845405979
+  public exponent: 65537
+  Validity: [From: Fri Mar 14 20:33:03 IST 2025,
+               To: Sat Mar 14 20:33:03 IST 2026]
+  Issuer: CN=mydomain.com, OU=QA, O=MyCompany, L=San Francisco, ST=California, C=US
+  SerialNumber: [    69ef32c7 6ffb2b0e 0aa801e7 e499642e ec9fb42a]
+
+Certificate Extensions: 3
+[1]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: D8 D9 84 A5 E4 FE 5B 8D   89 88 4E FF 3B 2C 44 87  ......[...N.;,D.
+0010: 7B 13 C4 0A                                        ....
+]
+]
+
+[2]: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen: no limit
+]
+
+[3]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: D8 D9 84 A5 E4 FE 5B 8D   89 88 4E FF 3B 2C 44 87  ......[...N.;,D.
+0010: 7B 13 C4 0A                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 38 87 C2 27 BD 92 26 9F   3B 4A 3B 46 8B 6D 95 4D  8..&apos;..&amp;.;J;F.m.M
+0010: 50 91 72 F1 BB 33 A2 DD   C0 09 48 7D B5 06 60 EC  P.r..3....H...`.
+0020: 22 77 63 AD 5B 32 5C 95   FF 30 15 A7 79 91 E8 7C  &quot;wc.[2\..0..y...
+0030: B4 78 CC 6F 78 92 D3 44   C4 D4 28 1C 92 FA E1 69  .x.ox..D..(....i
+0040: 18 C3 73 96 BD 40 32 16   2C 34 11 3C 65 CF 89 2D  ..s..@2.,4.&lt;e..-
+0050: ED 8D 1F 08 2A DD 11 5D   15 2E 4D F0 AD 3E CD 16  ....*..]..M..&gt;..
+0060: E1 C9 EF BB 87 5F 17 01   C9 95 F1 CE 14 84 EF F8  ....._..........
+0070: BC 95 F7 0E 51 BB B2 A3   2D 0F 13 4C 0D 8F 82 DB  ....Q...-..L....
+0080: 47 D8 3C 83 59 85 7F 83   20 81 34 DE 94 C6 91 6C  G.&lt;.Y... .4....l
+0090: 38 ED DE 97 A2 35 CE 94   14 9C 19 1E 4B BA 84 15  8....5......K...
+00A0: 2A 35 D5 99 26 A5 37 74   19 8A EA D8 DF 6A 29 7A  *5..&amp;.7t.....j)z
+00B0: 21 CE DD F8 0A 5C 51 86   6E 59 B3 55 6F 45 58 63  !....\Q.nY.UoEXc
+00C0: 41 68 59 78 90 C7 DA 05   08 0A 67 DC C6 83 F8 B5  AhYx......g.....
+00D0: A4 86 14 9E 94 5B B9 C5   A7 28 A5 0D F4 56 BF 6A  .....[...(...V.j
+00E0: 50 38 E8 98 C2 8F D6 56   4B 15 31 65 54 06 1E 6A  P8.....VK.1eT..j
+00F0: F1 56 AB 0F C4 D7 C7 42   03 30 70 CF 5C 58 3E 64  .V.....B.0p.\X&gt;d
+
+]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.digicert.qa.testcert.CertificateNegativeTests#testCertificateExpiry</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.digicert.qa.testcert.CertificateStructureValidationTest#testValidateCertExpirydate</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">com.digicert.qa.testcert.CertificateStructureValidationTest#testValidateCertSignatureAlgorith</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">com.digicert.qa.testcert.CertificateStructureValidationTest#testValidateCertVersion</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">com.digicert.qa.testcert.CertificateStructureValidationTest#testValidateCertificate</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">com.digicert.qa.testcert.CertificateStructureValidationTest#testValidateCommanName</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m12">com.digicert.qa.testcert.CertificateStructureValidationTest#testValidateIssuer</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
